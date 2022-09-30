@@ -1,0 +1,257 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:inherit;
+}
+
+html {
+    box-sizing:border-box;
+    font-size:62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+
+    padding: 15px 30px;
+    color: grey;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+header > a {
+    text-decoration: none;
+    color: grey;
+}
+
+.logo--container {
+    display:flex;
+    gap:20px;
+    align-items: center;
+    font-size:2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo--container > h4:hover {
+    color: white;
+}
+   
+
+.logo__image--container {
+    width:80px;
+}
+.logo__image--container > img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo__image--container > img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+
+header > nav > ul {
+    display:flex;
+    gap: 20px;
+}
+
+ header > nav > ul > li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+} 
+
+header > nav > ul > li:hover {
+    color: white;
+} 
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+/* Hero */
+
+
+.hero {
+    background-color: black;
+    height:100vh;
+    display:flex;
+    color: white;
+    /* background-opacity: 0.8; */
+}
+
+.hero--left, .hero--right {
+    flex:1;
+    padding: 0 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.hero--text > h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.hero--text > p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.hero--text > a {
+    padding: 15px 45px;
+    align-self: flex-start;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.hero--text > a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero--right{
+    background-color: white;
+} 
+
+
+.hero__image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* GALLERY */
+.gallery {
+    /* background-color: grey; */
+    min-height: 100vh;
+    color: black;
+    padding: 80px 0 40px 0;
+    
+}
+
+
+
+.gallery__title {
+  
+    background:oranged;
+    text-align: center;
+    padding: 30px 0;
+    width:50%;
+    margin: 0 auto;
+  
+}
+
+.gallery__title > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.gallery__title > p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 200px;
+}
+
+.gallery__list > div {
+    /* list-style: none; */
+    width: 30%;
+    /* height: 300px; */
+    /* background-color: red; */
+    /* overflow: hidden; */
+}
+
+
+ .gallery--item {
+    width: 100%;
+    padding-top: 56.25%;
+    /* background-color: oranged; */
+    position: relative;
+    border: 1px solid grey;
+ }
+
+ .gallery--item:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    /* background-color: black; */
+    background-opacity: 0.2;
+ }
+ .gallery--item > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    -webkit-text-stroke: 1px black;
+ }
+
+ .gallery--item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(0px);
+ }
+
+ 
+
+
+/* CONTACT */
+
+.contact {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}

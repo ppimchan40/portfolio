@@ -9,6 +9,7 @@ html {
     font-size:62.5%;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow: hidden; /* Hide scrollbars */
     
 }
 
@@ -244,7 +245,7 @@ header > nav > ul > li > a {
     position: absolute;
     top: 0;
     left: 0;
-    filter: blur(0px);
+    filter: blur(3px);
  }
 
  
